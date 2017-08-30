@@ -28,7 +28,7 @@ if (!is_null($events['events'])) {
 			
 			if ($text = "หนูหิ่น") {
 			    $response_text = $hello[$random_keys];
-			} else if ($text = $lotto[$random_keys2];) {
+			} else if ($text = $lotto[$random_keys2]) {
 				$response_text = $lotto_ans[$random_keys3];
 			}
 

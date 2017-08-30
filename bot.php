@@ -34,8 +34,8 @@ if (!is_null($events['events'])) {
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 
 
-			curl_setopt($ch, CURLOPT_PROXY, $proxy);
-			curl_setopt($ch, CURLOPT_PROXYUSERPWD, $proxyauth);
+			//curl_setopt($ch, CURLOPT_PROXY, $proxy);
+			//curl_setopt($ch, CURLOPT_PROXYUSERPWD, $proxyauth);
 			$ch = curl_init($url);
 			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

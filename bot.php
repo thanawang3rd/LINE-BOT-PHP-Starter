@@ -1,4 +1,5 @@
 <?php
+ini_set('always_populate_raw_post_data', '-1');
 $proxy = 'http://fixie:rnOjMCQkPajq457@velodrome.usefixie.com:80';
 $proxyauth = 'http://fixie:rnOjMCQkPajq457@velodrome.usefixie.com:80';
 $access_token = '+wkE0LfTqTxn8HRBs+HnkoM2FOHGmZhpbVl+Vm13Y0ZsW1Yplfj8UXibnizUAZYABL49/J9Q0AXoNMyurJI8xb1B3lbdEfzaFFU8fZAQ4jVvPLT5m9VNNm1pG3WsjCGHgn5nHb35NHH1vY3FxFr3OQdB04t89/1O/w1cDnyilFU=';

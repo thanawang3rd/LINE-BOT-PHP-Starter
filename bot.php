@@ -23,13 +23,13 @@ if (!is_null($events['events'])) {
 			$lotto=array("เลขออกอีหยัง","หวยออกอีหยัง","ถึกหยบ่","ถึกเลขบ่","ถูกหวยบ่");
 			$lotto_ans=array("บ่ถึก","กินเต็มจ้า","20","บ่เว่าเรื่องหวย","เบิดคำซิเว่า");
 			$random_keys=array_rand($hello,1);
-			$random_keys=array_rand($lotto,1);
-			$random_keys=array_rand($lotto_ans,1);
+			$random_keys2=array_rand($lotto,1);
+			$random_keys3=array_rand($lotto_ans,1);
 			
 			if ($text = "หนูหิ่น") {
 			    $response_text = $hello[$random_keys];
-			} else if ($text = $lotto[$random_keys];) {
-				$response_text = $lotto_ans[$random_keys];
+			} else if ($text = $lotto[$random_keys2];) {
+				$response_text = $lotto_ans[$random_keys3];
 			}
 
 			// Build message to reply back

@@ -23,7 +23,7 @@ if (!is_null($events['events'])) {
 			$random_keys=array_rand($hello,1);
 			
 			if ($text = "หนูหิ่น") {
-			    $response_text = $a[$random_keys];
+			    $response_text = $hello[$random_keys];
 			}
 
 			// Build message to reply back

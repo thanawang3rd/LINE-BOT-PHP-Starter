@@ -19,7 +19,7 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
-			$hello=array("red","green","blue","yellow","brown");
+			$hello=array("จ้าาาาา","อยู่จ้าา","อีหยัง","ว่าจั๊งได๋","เฮ็ดหยังจ้า");
 			$random_keys=array_rand($hello,1);
 			
 			if ($text = "หนูหิ่น") {

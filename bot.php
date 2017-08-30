@@ -18,15 +18,13 @@ if (!is_null($events['events'])) {
 			$text = $event['message']['text'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
-			$bot ="หนูหิ่น";
-			
-			switch($text)
-			{
-				case 'หนูหิ่น': $response_text = 'ทดสอบ';
-				             break;
-				default: $response_text = 'OK';
-			}
 
+			$hello=array("red","green","blue","yellow","brown");
+			$random_keys=array_rand($hello,1);
+			
+			if ($text = "หนูหิ่น") {
+			    $response_text = $a[$random_keys];
+			}
 
 			// Build message to reply back
 			$messages = [

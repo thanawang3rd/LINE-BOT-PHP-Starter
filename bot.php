@@ -19,10 +19,18 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
+			switch($text)
+			{
+				case 'test': $response_text = 'ทดสอบ';
+				             break;
+				default: $response_text = 'OK';
+			}
+
+
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => $text
+				'text' => $response_text
 			];
 
 			// Make a POST Request to Messaging API to reply to sender

@@ -20,7 +20,7 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			$hello=array("จ้าาาาา","อยู่จ้าา","อีหยัง","ว่าจั๊งได๋","เฮ็ดหยังจ้า");
-			$lotto=array("เลขออกอีหยัง","หวยออกอีหยัง","ถึกหยบ่","ถึกเลขบ่","ถูกหวยบ่");
+			$lotto=array("เลขออกอีหยัง","หวยออกอีหยัง","ถึกหวยบ่","ถึกเลขบ่","ถูกหวยบ่");
 			$lotto_ans=array("บ่ถึก","กินเต็มจ้า","20","บ่เว่าเรื่องหวย","เบิดคำซิเว่า");
 			$random_keys=array_rand($hello,1);
 			$random_keys2=array_rand($lotto,1);
@@ -28,7 +28,7 @@ if (!is_null($events['events'])) {
 			
 			if ($text = "หนูหิ่น") {
 			    $response_text = $hello[$random_keys];
-			} else if ($text = $lotto[$random_keys2]) {
+			} else if ($text = "เลขออกอีหยัง"||"หวยออกอีหยัง"||"ถึกหวยบ่"||"ถึกเลขบ่"||"ถูกหวยบ่") {
 				$response_text = $lotto_ans[$random_keys3];
 			}
 

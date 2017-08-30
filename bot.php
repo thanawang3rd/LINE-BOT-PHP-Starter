@@ -18,12 +18,20 @@ if (!is_null($events['events'])) {
 			$text = $event['message']['text'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
+			$bot ="หนูหิ่น";
 
-			switch($text)
-			{
-				case 'test': $response_text = 'ทดสอบ';
-				             break;
-				default: $response_text = 'OK';
+			switch ($bot) {
+			    case "หิวบ่":
+			        $response_text = 'หิวหลาย';
+			        break;
+			    case "ถูกหวยบ่":
+			        $response_text = 'บ่ถึก';
+			        break;
+			    case "นุชงามบ่":
+			        $response_text = 'เบิคำซิเว่า';
+			        break;
+			    default:
+			        $response_text = ' จ้าาา';
 			}
 
 

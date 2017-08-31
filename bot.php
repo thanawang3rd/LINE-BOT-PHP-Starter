@@ -33,9 +33,9 @@ if (!is_null($events['events'])) {
 			{
 				case "หนูหิ่น": $response_text = $hello[$random_keys];
 				             break;
-				case $lotto[$random_keys2]: $response_text = $lotto_ans[$random_keys3];
+				case in_array($lotto): $response_text = $lotto_ans[$random_keys3];
 				             break;
-				case $lotto[$random_keys5]: $response_text = $random_keys4;
+				case in_array($lotto_ask): $response_text = $random_keys4;
 				             break;
 				default: $response_text = 'ฮ่วย!';
 			}

@@ -41,13 +41,13 @@ if (!is_null($events['events'])) {
 				             break;
 				case "ถูกหวยบ่": $response_text = $lotto_ans[$random_keys3];
 				             break;
-				case "บอกเลขแหน่": $response_text = $random_keys4(rand(10,999));
+				case "บอกเลขแหน่": $response_text = $random_keys4;
 				             break;
-				case "ซื้อเลขอีหยังแหน่": $response_text = $random_keys4(rand(10,999));
+				case "ซื้อเลขอีหยังแหน่": $response_text = $random_keys4;
 				             break;
-				case "บอกหวยแหน่": $response_text = $random_keys4(rand(10,999));
+				case "บอกหวยแหน่": $response_text = $random_keys4;
 				             break;
-				case "ซื้อเลขอิหยัง": $response_text = $random_keys4(rand(10,999));
+				case "ซื้อเลขอิหยัง": $response_text = $random_keys4);
 				             break;
 				default: $response_text = 'ฮ่วย!';
 			}

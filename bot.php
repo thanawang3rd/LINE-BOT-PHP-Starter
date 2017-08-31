@@ -20,24 +20,24 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			$hello=array("จ้าาาาา","อยู่จ้าา","อีหยัง","ว่าจั๊งได๋","เฮ็ดหยังจ้า");
-			$lotto=array("เลขออกอีหยัง","หวยออกอีหยัง","ถึกหวยบ่","ถึกเลขบ่","ถูกหวยบ่");
 			$lotto_ans=array("บ่ถึก","กินเต็มจ้า","20","บ่เว่าเรื่องหวย","เบิดคำซิเว่า");
-			$lotto_ask=array("บอกเลขแหน่","ซื้อเลขอีหยังแหน่","บอกหวยแหน่","ซื้อเลขอิหยัง");
+			$default_rep=array("ฮ่วย","คั่ก","อีหลี","ถามพี่ฝนเด๊ะ","บ่รู้ไปนอนนามา");
 			$random_keys=array_rand($hello);
-			$random_keys2=array_rand($lotto);
+			$random_keys2=array_rand($default_rep);
 			$random_keys3=array_rand($lotto_ans);
 			$random_keys4=(rand(10,999));
-			$random_keys5=array_rand($lotto_ask);
 			
 			switch($text)
 			{
 				case "หนูหิ่น": $response_text = $hello[$random_keys];
 				             break;
-				case in_array($lotto): $response_text = $lotto_ans[$random_keys3];
+				case ("เลขออกอีหยัง"||"หวยออกอีหยัง"||"ถึกหวยบ่"||"ถึกเลขบ่"||"ถูกหวยบ่"): $response_text = $lotto_ans[$random_keys3];
 				             break;
 				case ("บอกเลขแหน่"||"ซื้อเลขอีหยังแหน่"||"บอกหวยแหน่"||"ซื้อเลขอิหยัง"): $response_text = $random_keys4;
 				             break;
-				default: $response_text = 'ฮ่วย!';
+				case ("ซันเด๊ะ"||"นุชงามบ่"||"นุชน่ารักบ่"||"น้องว่านงามบ่"||"ยากกินบิงซู"||"อยากไปเที่ยว"): $response_text = $default_rep[$random_keys2];
+				             break;
+				default: $response_text = $default_rep[$random_keys2];
 			}
 
 			// Build message to reply back

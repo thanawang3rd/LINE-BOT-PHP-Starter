@@ -24,7 +24,7 @@ if (!is_null($events['events'])) {
 			$default_rep=array("ฮ่วย","คั่ก","อีหลี","ถามพี่ฝนเด๊ะ","บ่รู้ไปนอนนามา");
 			$fon_rep=array("งามหลาย","งามคั่ก","สายแข็ง","ป๊อกแปดสองเด้ง","ถึกหวย");
 			$random_keys=array_rand($hello);
-			$random_keys/=array_rand($fon_rep);
+			$random_keys2=array_rand($fon_rep);
 			$random_keys3=array_rand($lotto_ans);
 			$random_keys4=(rand(10,999));
 			$random_keys5=array_rand($default_rep);

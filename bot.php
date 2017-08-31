@@ -26,10 +26,13 @@ if (!is_null($events['events'])) {
 			$random_keys2=array_rand($lotto,1);
 			$random_keys3=array_rand($lotto_ans,1);
 			
-			if ($text = "หนูหิ่น") {
-			    $response_text = $hello[$random_keys];
-			} else if ($text = "เลขออกอีหยัง"||"หวยออกอีหยัง"||"ถึกหวยบ่"||"ถึกเลขบ่"||"ถูกหวยบ่") {
-				$response_text = $lotto_ans[$random_keys3];
+			switch($text)
+			{
+				case 'หนูหิ่น': $response_text = $hello[$random_keys];
+				             break;
+				case $lotto[$random_keys2]: $response_text = $lotto_ans[$random_keys3];
+				             break;
+				default: $response_text = 'ฮ่วย!';
 			}
 
 			// Build message to reply back

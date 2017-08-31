@@ -25,7 +25,7 @@ if (!is_null($events['events'])) {
 			$random_keys=mt_rand(0, count($hello) - 1);
 			$random_keys2=mt_rand(0, count($lotto) - 1);
 			$random_keys3=mt_rand(0, count($lotto_ans) - 1);
-			$random_keys4(rand(10,999));
+			$random_keys4=(rand(10,999));
 			
 			switch($text)
 			{

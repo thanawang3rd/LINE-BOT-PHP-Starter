@@ -31,7 +31,7 @@ if (!is_null($events['events'])) {
 			{
 				case "หนูหิ่น": $response_text = $hello[$random_keys];
 				             break;
-				case $random_keys2: $response_text = $lotto_ans[$random_keys3];
+				case $lotto[$random_keys2]: $response_text = $lotto_ans[$random_keys3];
 				             break;
 				case "บอกเลขแหน่": $response_text = $random_keys4;
 				             break;

@@ -22,10 +22,12 @@ if (!is_null($events['events'])) {
 			$hello=array("จ้าาาาา","อยู่จ้าา","อีหยัง","ว่าจั๊งได๋","เฮ็ดหยังจ้า");
 			$lotto_ans=array("บ่ถึก","กินเต็มจ้า","20","บ่เว่าเรื่องหวย","เบิดคำซิเว่า");
 			$default_rep=array("ฮ่วย","คั่ก","อีหลี","ถามพี่ฝนเด๊ะ","บ่รู้ไปนอนนามา");
+			$fon_rep=array("งามหลาย","งามคั่ก","สายแข็ง","ป๊อกแปดสองเด้ง","ถึกหวย");
 			$random_keys=array_rand($hello);
-			$random_keys5=array_rand($default_rep);
+			$random_keys/=array_rand($fon_rep);
 			$random_keys3=array_rand($lotto_ans);
 			$random_keys4=(rand(10,999));
+			$random_keys5=array_rand($default_rep);
 			
 			switch($text)
 			{
@@ -44,6 +46,8 @@ if (!is_null($events['events'])) {
 				case "น้องว่านงามบ่": 
 				case "อยากกินบิงซู": 
 				case "อยากไปเที่ยว": 
+				case "รู้จักนุชบ่": 
+				case "รู้จักน้องว่านบ่": 
 							 $response_text = $default_rep[$random_keys5];
 				             break;
 				case "บอกเลขแหน่": 
@@ -51,6 +55,12 @@ if (!is_null($events['events'])) {
 				case "บอกหวยแหน่": 
 				case "ซื้อเลขอิหยัง": 
 							 $response_text = $random_keys4;
+				             break;
+				case "พี่ฝน": 
+				case "พี่ฝนงามบ่": 
+				case "พี่ฝนเด๊ะ": 
+				case "รู้จักพี่ฝนบ่": 
+							 $response_text = $fon_rep[$random_keys2];
 				             break;
 				default: $response_text = $default_rep[$random_keys5];
 				             break;

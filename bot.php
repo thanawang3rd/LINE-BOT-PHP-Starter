@@ -22,9 +22,9 @@ if (!is_null($events['events'])) {
 			$hello=array("จ้าาาาา","อยู่จ้าา","อีหยัง","ว่าจั๊งได๋","เฮ็ดหยังจ้า");
 			$lotto=array("เลขออกอีหยัง","หวยออกอีหยัง","ถึกหวยบ่","ถึกเลขบ่","ถูกหวยบ่");
 			$lotto_ans=array("บ่ถึก","กินเต็มจ้า","20","บ่เว่าเรื่องหวย","เบิดคำซิเว่า");
-			$random_keys=array_rand($hello,1);
-			$random_keys2=array_rand($lotto,1);
-			$random_keys3=array_rand($lotto_ans,1);
+			$random_keys=array_rand($hello,5);
+			$random_keys2=array_rand($lotto,5);
+			$random_keys3=array_rand($lotto_ans,5);
 			
 			switch($text)
 			{

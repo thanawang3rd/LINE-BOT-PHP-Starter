@@ -28,9 +28,9 @@ if (!is_null($events['events'])) {
 			
 			switch($text)
 			{
-				case 'หนูหิ่น': $response_text = $hello[$random_keys[0]];
+				case 'หนูหิ่น': $response_text = $hello[$random_keys];
 				             break;
-				case $lotto[$random_keys2[0]]: $response_text = $lotto_ans[$random_keys3[0]];
+				case $lotto[$random_keys2]: $response_text = $lotto_ans[$random_keys3];
 				             break;
 				default: $response_text = 'ฮ่วย!';
 			}

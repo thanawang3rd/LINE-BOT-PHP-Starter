@@ -31,13 +31,29 @@ if (!is_null($events['events'])) {
 			{
 				case "หนูหิ่น": $response_text = $hello[$random_keys];
 				             break;
-				case ("เลขออกอีหยัง"||"หวยออกอีหยัง"||"ถึกหวยบ่"||"ถึกเลขบ่"||"ถูกหวยบ่"): $response_text = $lotto_ans[$random_keys3];
+				case "เลขออกอีหยัง":
+				case "หวยออกอีหยัง":
+				case "ถึกหวยบ่":
+				case "ถึกเลขบ่":
+				case "ถูกหวยบ่": 
+							 $response_text = $lotto_ans[$random_keys3];
 				             break;
-				case ("ซันเด๊ะ"||"นุชงามบ่"||"นุชน่ารักบ่"||"น้องว่านงามบ่"||"อยากกินบิงซู"||"อยากไปเที่ยว"): $response_text = $default_rep[$random_keys5];
+				case "ซันเด๊ะ":
+				case "นุชงามบ่":
+				case "นุชน่ารักบ่":
+				case "น้องว่านงามบ่": 
+				case "อยากกินบิงซู": 
+				case "อยากไปเที่ยว": 
+							 $response_text = $default_rep[$random_keys5];
 				             break;
-				case ("บอกเลขแหน่"||"ซื้อเลขอีหยังแหน่"||"บอกหวยแหน่"||"ซื้อเลขอิหยัง"): $response_text = $random_keys4;
+				case "บอกเลขแหน่": 
+				case "ซื้อเลขอีหยังแหน่": 
+				case "บอกหวยแหน่": 
+				case "ซื้อเลขอิหยัง": 
+							 $response_text = $random_keys4;
 				             break;
 				default: $response_text = $default_rep[$random_keys5];
+				             break;
 			}
 
 			// Build message to reply back

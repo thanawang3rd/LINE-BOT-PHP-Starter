@@ -28,9 +28,17 @@ if (!is_null($events['events'])) {
 			
 			switch($text)
 			{
-				case 'หนูหิ่น': $response_text = $hello[$random_keys];
+				case "หนูหิ่น": $response_text = $hello[$random_keys];
 				             break;
-				case $lotto[$random_keys2]: $response_text = $lotto_ans[$random_keys3];
+				case "เลขออกอีหยัง": $response_text = $lotto_ans[$random_keys3];
+				             break;
+				case "หวยออกอีหยัง": $response_text = $lotto_ans[$random_keys3];
+				             break;
+				case "ถึกหวยบ่": $response_text = $lotto_ans[$random_keys3];
+				             break;
+				case "ถึกเลขบ่": $response_text = $lotto_ans[$random_keys3];
+				             break;
+				case "ถูกหวยบ่": $response_text = $lotto_ans[$random_keys3];
 				             break;
 				default: $response_text = 'ฮ่วย!';
 			}

@@ -35,7 +35,7 @@ if (!is_null($events['events'])) {
 				             break;
 				case in_array($lotto): $response_text = $lotto_ans[$random_keys3];
 				             break;
-				case in_array($lotto_ask): $response_text = $random_keys4;
+				case ("บอกเลขแหน่"||"ซื้อเลขอีหยังแหน่"||"บอกหวยแหน่"||"ซื้อเลขอิหยัง"): $response_text = $random_keys4;
 				             break;
 				default: $response_text = 'ฮ่วย!';
 			}

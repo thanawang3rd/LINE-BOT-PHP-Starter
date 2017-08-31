@@ -22,24 +22,16 @@ if (!is_null($events['events'])) {
 			$hello=array("จ้าาาาา","อยู่จ้าา","อีหยัง","ว่าจั๊งได๋","เฮ็ดหยังจ้า");
 			$lotto=array("เลขออกอีหยัง","หวยออกอีหยัง","ถึกหวยบ่","ถึกเลขบ่","ถูกหวยบ่");
 			$lotto_ans=array("บ่ถึก","กินเต็มจ้า","20","บ่เว่าเรื่องหวย","เบิดคำซิเว่า");
-			$random_keys=mt_rand(0, count($hello) - 1);
-			$random_keys2=mt_rand(0, count($lotto) - 1);
-			$random_keys3=mt_rand(0, count($lotto_ans) - 1);
+			$random_keys=array_rand($hello);
+			$random_keys2=array_rand($lotto);
+			$random_keys3=array_rand($lotto_ans);
 			$random_keys4=(rand(10,999));
 			
 			switch($text)
 			{
 				case "หนูหิ่น": $response_text = $hello[$random_keys];
 				             break;
-				case "เลขออกอีหยัง": $response_text = $lotto_ans[$random_keys3];
-				             break;
-				case "หวยออกอีหยัง": $response_text = $lotto_ans[$random_keys3];
-				             break;
-				case "ถึกหวยบ่": $response_text = $lotto_ans[$random_keys3];
-				             break;
-				case "ถึกเลขบ่": $response_text = $lotto_ans[$random_keys3];
-				             break;
-				case "ถูกหวยบ่": $response_text = $lotto_ans[$random_keys3];
+				case $random_keys2: $response_text = $lotto_ans[$random_keys3];
 				             break;
 				case "บอกเลขแหน่": $response_text = $random_keys4;
 				             break;
@@ -47,7 +39,7 @@ if (!is_null($events['events'])) {
 				             break;
 				case "บอกหวยแหน่": $response_text = $random_keys4;
 				             break;
-				case "ซื้อเลขอิหยัง": $response_text = $random_keys4);
+				case "ซื้อเลขอิหยัง": $response_text = $random_keys4;
 				             break;
 				default: $response_text = 'ฮ่วย!';
 			}

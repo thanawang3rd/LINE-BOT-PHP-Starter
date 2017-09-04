@@ -19,19 +19,25 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
-			$hello=array("จ้าาาาา","อยู่จ้าา","อีหยัง","ว่าจั๊งได๋","เฮ็ดหยังจ้า");
+			$hello=array("จ้าาาาา","อยู่จ้าา","อีหยัง","ว่าจั๊งได๋","เฮ็ดหยังจ้า","เฮ็ดหยังท้าว");
 			$lotto_ans=array("บ่ถึก","กินเต็มจ้า","20","บ่เว่าเรื่องหวย","เบิดคำซิเว่า","ผู้หญิงอย่าหยุดหวย");
 			$default_rep=array("ฮ่วย","คั่ก","อีหลี","ถามพี่ฝนเด๊ะ","บ่รู้ไปนอนนามา");
 			$fon_rep=array("งามหลาย","งามคั่ก","สายแข็ง","ป๊อกแปดสองเด้ง","ถึกหวย");
+			$bank_rep=array("หล่อหลาย","หล่อคั่ก","ขี้เห่อ","ขี้ลืม","หลงทางอีกแล้ว","หลับดึกหลาย","นุ่มนิ่ม");
+			$hin_rep=array("บ่หลับ","หลับอยู่","หิวนอน","อิ่มหลาย","พี่ฝนเล่นไผ่บ่","ล้างจาน","กวาดบ้าน","หิวหลาย","หิวแท้น่อ");
 			$random_keys=array_rand($hello);
 			$random_keys2=array_rand($fon_rep);
 			$random_keys3=array_rand($lotto_ans);
 			$random_keys4=(rand(10,999));
-			$random_keys5=array_rand($default_rep);
+			$random_keys3=array_rand($lotto_ans);
+			$random_keys6=array_rand($bank_rep);
+			$random_keys7=array_rand($hin_rep);
 			
 			switch($text)
 			{
-				case "หนูหิ่น": $response_text = $hello[$random_keys];
+				case "หนูหิ่น": 
+				case "หิ่น": 
+							 $response_text = $hello[$random_keys];
 				             break;
 				case "เลขออกอีหยัง":
 				case "หวยออกอีหยัง":
@@ -55,6 +61,8 @@ if (!is_null($events['events'])) {
 				case "บอกหวยแหน่": 
 				case "ซื้อเลขอิหยัง": 
 				case "งวดหน้าออกอีหยัง": 
+				case "งวดหน้าออกเลขอีหยัง": 
+				case "งวดหน้าเด๊ะ": 
 							 $response_text = $random_keys4;
 				             break;
 				case "พี่ฝน": 
@@ -62,7 +70,21 @@ if (!is_null($events['events'])) {
 				case "พี่ฝนเด๊ะ": 
 				case "รู้จักพี่ฝนบ่": 
 							 $response_text = $fon_rep[$random_keys2];
-				             break;
+							 break;
+				case "พี่แบงค์": 
+				case "พี่แบงค์หล่อบ่": 
+				case "พี่แบงค์เด๊ะ": 
+				case "รู้จักพี่แบงค์บ่": 
+							$response_text = $bank_rep[$random_keys6];
+							break;
+				case "อยู่บ่": 
+				case "เฮ็ดหยังอยู่": 
+				case "กินข้าวล่ะติ่": 
+				case "บ่หลับบ่นอน": 
+				case "หลับละบ่": 
+				case "ไปไสมา": 
+							$response_text = $hin_rep[$random_keys7];
+							break;
 				default: $response_text = $default_rep[$random_keys5];
 				             break;
 			}

@@ -29,7 +29,7 @@ if (!is_null($events['events'])) {
 			$random_keys2=array_rand($fon_rep);
 			$random_keys3=array_rand($lotto_ans);
 			$random_keys4=(rand(10,999));
-			$random_keys3=array_rand($lotto_ans);
+			$random_keys5=array_rand($default_rep);
 			$random_keys6=array_rand($bank_rep);
 			$random_keys7=array_rand($hin_rep);
 			

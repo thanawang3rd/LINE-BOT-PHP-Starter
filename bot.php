@@ -39,6 +39,12 @@ if (!is_null($events['events'])) {
 				case "หิ่น": 
 							 $response_text = $hello[$random_keys];
 				             break;
+				case "พี่ฝน": 
+				case "พี่ฝนงามบ่": 
+				case "พี่ฝนเด๊ะ": 
+				case "รู้จักพี่ฝนบ่": 
+							$response_text = $fon_rep[$random_keys2];
+							break;
 				case "เลขออกอีหยัง":
 				case "หวยออกอีหยัง":
 				case "ถึกหวยบ่":
@@ -46,6 +52,15 @@ if (!is_null($events['events'])) {
 				case "ถูกหวยบ่": 
 							 $response_text = $lotto_ans[$random_keys3];
 				             break;
+				case "บอกเลขแหน่": 
+				case "ซื้อเลขอีหยังแหน่": 
+				case "บอกหวยแหน่": 
+				case "ซื้อเลขอิหยัง": 
+				case "งวดหน้าออกอีหยัง": 
+				case "งวดหน้าออกเลขอีหยัง": 
+				case "งวดหน้าเด๊ะ": 
+							 $response_text = $random_keys4;
+							 break;
 				case "ซันเด๊ะ":
 				case "นุชงามบ่":
 				case "นุชน่ารักบ่":
@@ -56,21 +71,6 @@ if (!is_null($events['events'])) {
 				case "รู้จักน้องว่านบ่": 
 							 $response_text = $default_rep[$random_keys5];
 				             break;
-				case "บอกเลขแหน่": 
-				case "ซื้อเลขอีหยังแหน่": 
-				case "บอกหวยแหน่": 
-				case "ซื้อเลขอิหยัง": 
-				case "งวดหน้าออกอีหยัง": 
-				case "งวดหน้าออกเลขอีหยัง": 
-				case "งวดหน้าเด๊ะ": 
-							 $response_text = $random_keys4;
-				             break;
-				case "พี่ฝน": 
-				case "พี่ฝนงามบ่": 
-				case "พี่ฝนเด๊ะ": 
-				case "รู้จักพี่ฝนบ่": 
-							 $response_text = $fon_rep[$random_keys2];
-							 break;
 				case "พี่แบงค์": 
 				case "พี่แบงค์หล่อบ่": 
 				case "พี่แบงค์เด๊ะ": 

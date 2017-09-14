@@ -25,6 +25,7 @@ if (!is_null($events['events'])) {
 			$fon_rep=array("งามหลาย","งามคั่ก","สายแข็ง","ป๊อกแปดสองเด้ง","ถึกหวย","ปั่นยานเก่งหลาย","ปั่นยานไส้แตก","เสียไพ่","ได้ไพ่ห้าร้อย", "ก็คั่กก็หยังชินจังก็หลาย");
 			$bank_rep=array("หล่อหลาย","หล่อคั่ก","ขี้เห่อ","ขี้ลืม","หลงทางอีกแล้ว","หลับดึกหลาย","นุ่มนิ่ม");
 			$hin_rep=array("บ่หลับ","หลับอยู่","หิวนอน","อิ่มหลาย","พี่ฝนเล่นไผ่บ่","ล้างจาน","กวาดบ้าน","หิวหลาย","หิวแท้น่อ", "รีดผ้า", "ขัดส้วม");
+			$haha_rep=array("ฮ่าๆๆ","555","อยากหัวหลาย");
 			$random_keys=array_rand($hello);
 			$random_keys2=array_rand($fon_rep);
 			$random_keys3=array_rand($lotto_ans);
@@ -80,9 +81,12 @@ if (!is_null($events['events'])) {
 							$response_text = $bank_rep[$random_keys6];
 							break;
 				case "อยู่บ่": 
+				case "กินข้าวละติ่": 
 				case "กินข้าวล่ะติ่": 
 				case "นอนล่ะติ่": 
+				case "นอนละติ่": 
 				case "เงียบหลาย": 
+				case "หลับละติ่": 
 				case "หลับล่ะติ่": 
 				case "บ่หลับบ่นอน": 
 				case "หลับละบ่": 
@@ -94,8 +98,15 @@ if (!is_null($events['events'])) {
 				case "อยากกินหมูกะทะบ่": 
 							$response_text = $hin_rep[$random_keys7];
 							break;
+				case "ฮ่าๆๆ": 
+				case "ฮ่าาา": 
+				case "555": 
+				case "5555": 
+				case "55555": 
+							$response_text = $hin_rep[$random_keys7];
+							break;
 				default: $response_text = $default_rep[$random_keys5];
-				             break;
+							break;
 			}
 
 			// Build message to reply back

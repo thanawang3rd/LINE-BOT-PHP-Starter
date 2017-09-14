@@ -33,6 +33,7 @@ if (!is_null($events['events'])) {
 			$random_keys5=array_rand($default_rep);
 			$random_keys6=array_rand($bank_rep);
 			$random_keys7=array_rand($hin_rep);
+			$random_keys8=array_rand($haha_rep);
 			
 			switch($text)
 			{
@@ -96,14 +97,22 @@ if (!is_null($events['events'])) {
 				case "เฮดหยัง": 
 				case "เฮดหยังอยู่": 
 				case "อยากกินหมูกะทะบ่": 
-							$response_text = $hin_rep[$random_keys7];
+							$response_text = $haha_rep[$random_keys7];
 							break;
 				case "ฮ่าๆๆ": 
+				case "ฮ่าๆๆๆ":
+				case "ฮ่าๆๆๆๆ": 
+				case "ฮ่าๆๆๆๆๆ":  
 				case "ฮ่าาา": 
 				case "555": 
 				case "5555": 
 				case "55555": 
-							$response_text = $hin_rep[$random_keys7];
+				case "555555": 
+				case "5555555": 
+				case "ถถถ": 
+				case "ถถถถ": 
+				case "ถถถถถ": 
+							$response_text = $hin_rep[$random_keys8];
 							break;
 				default: $response_text = $default_rep[$random_keys5];
 							break;

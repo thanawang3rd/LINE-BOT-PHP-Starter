@@ -112,7 +112,7 @@ if (!is_null($events['events'])) {
 				case "ถถถ": 
 				case "ถถถถ": 
 				case "ถถถถถ": 
-							$response_text = $hin_rep[$random_keys8];
+							$response_text = $haha_rep[$random_keys8];
 							break;
 				default: $response_text = $default_rep[$random_keys5];
 							break;
